@@ -1,0 +1,110 @@
+\documentclass[11pt]{article}
+\usepackage{indentfirst}
+\usepackage{multicol}
+\usepackage[margin=0.5in,bottom=1in,top=1in]{geometry}
+\newgeometry{margin=0.5in, bottom=1in, top=0.1in}
+
+%Gummi|065|=)
+\title{\textbf{Algorithm Analysis}}
+\author{Nabil Rahiman}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section{Seven Imprtant functions for analysis}
+
+
+\begin{itemize}
+\begin{multicols}{2}
+\item{Constant functions}
+	\begin{sloppypar}
+	$f\left(x \right) =c$
+	\end{sloppypar}
+\item{The algorithm function}
+	\begin{sloppypar} 
+	x = $\log_{b} n$ 
+	\end{sloppypar}
+	Logeritm Rules:
+	
+	$\log_{b} {ac}  = \log_{b} a  + \log_{b} c$
+
+	$\log_{b} {a/c}  = \log_{b} a - \log_{b} c$
+
+	$\log_{b} {a^c} = c * \log_{b} a $
+	
+	$b^{\log_{d} {a}} = a ^ {\log_{d} b }$	
+
+\item{The linear function}
+	\begin{sloppypar}
+	$f\left(n \right) = n $
+	\end{sloppypar}
+
+\item{The N-Log-N functions}
+	\begin{sloppypar}
+	$f\left(n \right) = n * \log n  $
+	\end{sloppypar}
+
+\item{The Quadratic function}
+	\begin{sloppypar}
+	$f\left(n \right) = n^2 $
+	\end{sloppypar}
+	
+\item{The Cubic functions and other polinomial functions}
+	\begin{sloppypar}
+	$f\left(n \right) = n^3 $
+	
+	$f\left(n \right) = a_0 + a_1n + a_2n^2 +\cdot \cdot \cdot+a_dn^d$
+
+	$\sum_{i=a}^{b} f\left(i \right)= f\left(a \right) + f\left(a + 1\right) + f\left(a + 2 \right) + \cdot \cdot \cdot + f\left(b \right)$
+	
+	\end{sloppypar}
+
+\item{The Exponential function}
+	\begin{sloppypar}
+	$f\left(n \right) = b^n $
+	Gemometrix Sums:
+	
+	$1 + 2 + 8 + \cdot \cdot \cdot + 2^{n-1} = 2^n - 1 $
+	\end{sloppypar}
+
+
+\end{multicols}
+\end{itemize}
+
+
+\section{Comparing Growth Rates}
+	\begin{sloppypar}
+	$1 < \log n  < n < \log n  < n\log n < n^2 < n^3 < a^3$
+	\begin{itemize}
+	\item {The Ceiling Function}
+	
+	$\lceil x \rceil$ = the largest integer less than or equal to x
+	\item {The Floor Function}
+	
+	$\lfloor x \rfloor$ = the smallest integer greater than or equal to x
+	
+	\end{itemize}
+	\end{sloppypar}
+	
+\section{Asymptotic Notation}
+	\subsubsection{Big-Oh Notation}
+	The big-Oh notation is used widely to characterize running times and space bounds in terms of some parameter n, which varies from problem to problem,
+	
+	$f\left(n \right)$ is $O\left((g\left(n \right) \right)$ if there is real constant $c > 0$  and integer constant $n_0 > 1$ 
+	
+	then
+	
+	$f\left(n \right) \leq  g\left(n \right)$
+
+\section{Feedback}
+We hope you will enjoy using this release as much as we enjoyed creating it. If you have comments, suggestions or wish to report an issue you are experiencing - contact us at: \emph{https://github.com/alexandervdm/gummi}.
+
+\section{One more thing}
+If you are wondering where your old default text is; it has been stored as a template. The template menu can be used to access and restore it. 
+
+Support for two high-level {\LaTeX} building systems, \emph{rubber}\footnote{https://launchpad.net/rubber/} \& \emph{latexmk}\footnote{http://www.phys.psu.edu/{\textasciitilde}collins/software/latexmk-jcc/} has been added as well. Your preferred typesetter can be configured through the Compilation tab in the Preferences menu. Typesetters that are not installed on your system will not be selectable. 
+
+Added for your viewing convenience is a continuous preview mode for the PDF. This mode is enabled by default, but can also be disabled through the \emph{(View $\rightarrow$ Page layout in preview)} menu. Complementary to this feature is SyncTeX integration, which allows you to synchronize the position in your editor with the PDF preview. 
+
+\end{document}
